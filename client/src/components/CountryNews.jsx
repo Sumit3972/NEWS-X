@@ -22,7 +22,7 @@ function CountryNews() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`http://localhost:3000/country/${params.iso}?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-x-hf5y.vercel.app/country/${params.iso}?page=${page}&pageSize=${pageSize}`)
       .then((response) => {
         if (response.ok) {
           return response.json();

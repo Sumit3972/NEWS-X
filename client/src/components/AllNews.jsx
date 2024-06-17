@@ -17,7 +17,7 @@ function AllNews() {
   }
   let pageSize = 12;
   useEffect(() => {
-    fetch(`http://localhost:3000/all-news?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-x-hf5y.vercel.app/all-news?page=${page}&pageSize=${pageSize}`)
       .then(response => {
         // console.log(response) 
         if (response.ok) {
